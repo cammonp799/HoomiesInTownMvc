@@ -1,0 +1,351 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", serif;
+    color: black;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/*-------------------------Header--------------------------*/
+.header_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 3vw;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.black_logo {
+    height: 50vh;
+    width: 30vh;
+    margin-bottom: 15vh;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 60vh;
+    max-width: 1200vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 9rem;
+    margin-bottom: 20vh;
+}
+
+.navbar .toggle_btn {
+    color: black;
+    font-size: 3vh;
+    cursor: pointer;
+    margin-bottom: 20vh;
+    margin-right: 10vh;
+    display: none;
+}
+
+/*--------dropdown Menu-------*/
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 400px;
+    width: 400px;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 400px;
+}
+
+.dropdown_menu li {
+    padding: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contanier_welcome {
+    height: calc(100vh - 60vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contanier_welcome h1 {
+    font-size: 7rem;
+    margin-bottom: 2rem;
+}
+
+.contanier_welcome p {
+    font-size: 3rem;
+}
+
+/*-----------------------Header------------------------*/
+
+
+/*---------------- MAIN ----------------*/
+.editProfil_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editProfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+h4 {
+    text-align: center;
+}
+
+/* form */
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 900px;
+    margin-top: 80px;
+    margin-right: 170px;
+}
+
+form input {
+    font-size: 2rem;
+    margin: 15px 0;
+    padding: 40px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #e4e4e4;
+}
+
+input {
+    width: 47%;
+}
+
+input:hover {
+    border-bottom: 2px solid #3b8d8d;
+}
+
+
+
+
+.btn_login {
+    background-color: #05474e;
+}
+
+form button {
+    background-color: #05474e;
+    width: 192px;
+    height: 60px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-top: 60px;
+    outline: none;
+    margin: 0 auto;
+    transition: 0.2s;
+}
+
+form button:hover {
+    transform: translateY(-5px);
+    box-shadow: rgb(59, 141, 141) 0px 10px 0px Opx;
+}
+/* form */  
+
+
+/* container_dashboard */
+.editProfil_btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vw;
+}
+/* container_dashboard */
+
+/* dashboard_btn*/ 
+.btn_editProfil {
+    padding: 1rem;
+    margin-right: 1vw;
+    background-color: rgb(74, 103, 198);
+    color: snow;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn_editProfil_1{
+    padding: 1rem;
+    background-color: rgb(255, 208, 0);
+    color: snow;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+/* .dashboard_btn*/ 
+/*---------------- MAIN ----------------*/
+
+/*------------------------Footer-------------------------- */
+
+footer {
+    margin-top: 200px;
+}
+
+.footer_container {
+    background-color: #05474e;
+    height: 100px;
+}
+
+.end_footer {
+    padding-top: 30px;
+    color: snow;
+    margin: 0 auto;
+    font-size: 40px;
+    text-align: center;
+}
+
+.footer_content {
+    background-color: #02323a;
+    height: 1800px;
+}
+
+.footer_mentions {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 300px;
+    color: snow;
+    font-size: 40px;
+    text-align: center;
+}
+
+.footer_mentions :hover {
+    text-decoration: underline;
+}
+
+.footer_info {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 200px;
+}
+
+.story {
+    color: snow;
+    font-size: 40px;
+}
+
+.about_us {
+    margin-top: 40px;
+    width: 500px;
+    font-size: 30px;
+    line-height: 1.3em;
+    color: grey;
+}
+
+.about_us span:hover {
+    text-decoration: underline;
+}
+
+.btn_footer {
+    font-size: 30px;
+    padding: 8px 14px;
+    cursor: pointer;
+    border: 2px solid #0f172a;
+    box-shadow: 4px 4px 0 0 white, 6px 6px 0 0 #0f172a;
+    transition-duration: 200ms;
+}
+
+.btn_footer:hover {
+    background-color: #b48d5d;
+    color: white;
+    box-shadow: 9px 9px 0 0 white, 10px 10px 0 0 #0f172a;
+    translate: -2px -2px;
+}
+
+.footer_logo {
+    margin-left: 200px;
+}
+
+.footer_logo h2 {
+    color: snow;
+}
+
+.footer_logo img {
+    margin-top: 10px;
+    width: 400px;
+    height: 600px;
+}
+
+.fleche {
+    width: 50px;
+    height: 50px;
+}
+
+.sub_story {
+    display: flex;
+    margin-top: 30px;
+}
+
+.sub_story a {
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 30px;
+    color: whitesmoke;
+    line-height: 1.1em;
+    text-decoration: none;
+}
+/*------------------------Footer-------------------------*/
+
+

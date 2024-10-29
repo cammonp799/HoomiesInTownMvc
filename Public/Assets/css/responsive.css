@@ -1,0 +1,215 @@
+/* Media Queries( Responsive )*/
+@media screen and (max-width: 992px) and (orientation: portrait) {
+  /*-----------------------Header--------------------- */
+  .black_logo {
+    height: 65vw;
+    width: 50vw;
+    margin-bottom: 15vh;
+  }
+  .header_video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+  }
+  .navbar .links {
+    display: none;
+  }
+
+  .navbar .toggle_btn {
+    display: block;
+  }
+
+  .toggle_btn {
+    margin-left: 3vw;
+  }
+
+  .dropdown_menu {
+    display: block;
+  }
+
+  .contanier_welcome h1 {
+    font-size: 12vw;
+  }
+
+  .contanier_welcome p {
+    font-size: 5vw;
+  }
+  /*-------------------------------Header-----------------------------------*/
+
+  /*-------------------------------Main-------------------------------------*/
+  .Primary_Feature {
+    background-image: url(../picture/homePage/Joyful.png);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  h3.Primary_Feature_title {
+    font-size: 10vw;
+  }
+
+  .Primary_Feature .Primary_Feature_description {
+    display: none;
+  }
+
+  .Primary_Feature .read_more {
+    display: block;
+    display: flex;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.6;
+    color: white;
+    font-size: 5vw;
+    padding-top: 7vh;
+    width: 60vw;
+  }
+
+  /*--------------------contact----------------*/
+  .Secondary_Feature {
+    display: block;
+  }
+
+  .Secondary_Feature_container {
+    display: none;
+  }
+
+  .Secondary_Feature_container h3 {
+    display: block;
+  }
+  /*--------------------contact----------------*/
+
+  /*--------------------About-----------------*/
+  article.about_description {
+    margin-top: 100px;
+  }
+  .about_title {
+    display: none;
+  }
+
+  article.about_description_item p {
+    width: 80vw;
+    font-size: 4vw;
+  }
+
+  article.about_description_item {
+    margin-left: 50px;
+    margin-top: 100px;
+  }
+
+  article h3.about_discover {
+    display: block;
+    font-size: 8vw;
+    text-align: center;
+    margin-top: 5vw;
+    color: #b48d5d;
+  }
+
+  form {
+    width: 90vw;
+  }
+
+  article h3.form_h3 {
+    display: block;
+    font-size: 8vw;
+    text-align: center;
+    margin-top: 30px;
+    color: #b48d5d;
+  }
+  /*---------------------About----------------*/
+
+  /*---------------------carrousel-----------------*/
+
+  .Carousel_title {
+    width: 40vw;
+  }
+
+  .Carousel_title h4 {
+    width: 50vw;
+    margin-top: 10vw;
+    font-size: 8vw;
+    color: #b48d5d;
+    margin-left: 3vw;
+  }
+
+  .Carousel_title p {
+    width: 35vw;
+    margin-top: 10vw;
+    font-size: 5vw;
+    margin-left: 30px;
+  }
+
+  /*---------------------carrousel-----------------*/
+  /*--------------------------------------------Main-----------------------------*/
+
+  /*--------------------------------------------Footer---------------------------*/
+  .footer_content {
+    display: none;
+  }
+
+  footer {
+    margin-top: 50vw;
+  }
+  /*--------------------------------------------Footer---------------------------*/
+}
+
+@media screen and (max-width: 576px) {
+  .black_logo {
+    height: 40vh;
+    width: 20vh;
+    margin-bottom: 15vh;
+  }
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
+
+  .toggle_btn {
+    margin-left: 150px;
+  }
+
+  .contanier_welcome h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .contanier_welcome p {
+    font-size: 2rem;
+  }
+
+  .footer_container p {
+    font-size: 2rem;
+  }
+
+  .Primary_Feature .Primary_Feature_title {
+    font-size: 3rem;
+  }
+
+  .Primary_Feature .read_more {
+    font-size: 2rem;
+  }
+
+  article.about_discover {
+    font-size: 2rem;
+  }
+  article.about_description_item p {
+    width: 80%;
+    font-size: 32px;
+  }
+
+  #about_discover_none {
+    display: none;
+  }
+
+  .Carousel_title {
+    display: none;
+  }
+
+  .swiper {
+    width: 100%;
+  }
+}
+/* Media Queries  ( Responsive )*/
